@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+body {
+    background-color: rgb(81, 80, 80);
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+div > p:first-child {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+#contenitore {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5%;
+}
+
+.postit {
+    flex-basis: 15%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 5% 3%;
+    box-shadow: 10px 10px 13px -4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 10px 10px 13px -4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 10px 10px 13px -4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    margin: 6%;
+}
+
+#post1, #post5, #post7 {
+    background: rgb(248, 248, 198);
+    background: linear-gradient(180deg, rgba(248, 248, 198, 1) 0%, rgba(248, 248, 198, 1) 70%, rgba(186, 186, 146, 1) 100%);
+    transform: rotate(-3deg);
+}
+
+#post2, #post4, #post8 {
+    background: rgb(199, 245, 200);
+    background: linear-gradient(180deg, rgba(199, 245, 200, 1) 0%, rgba(199, 245, 200, 1) 70%, rgba(132, 159, 132, 1) 100%);
+    transform: rotate(5deg);
+}
+
+#post4 {
+    transform: rotate(8deg);
+}
+
+#post3, #post6 {
+    background: rgb(200, 200, 246);
+    background: linear-gradient(180deg, rgba(200, 200, 246, 1) 0%, rgba(200, 200, 246, 1) 70%, rgba(126, 126, 148, 1) 100%);
+    transform: rotate(-6deg);
+}
+
+/* Devo selezionarli per l'id, con la classe scale non funziona, cursor pointer invece funziona con le classi */
+#post1:hover, #post2:hover, #post3:hover, #post4:hover, #post5:hover, #post6:hover, #post7:hover, #post8:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+    z-index: 1;
+    transition-duration: 1.3s;
+}
